@@ -1,31 +1,97 @@
+
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #e3f0ff 100%);
+  color: #22223b;
+}
+
 .App {
   text-align: center;
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.octofit-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  background: linear-gradient(90deg, #0d6efd 60%, #6c63ff 100%) !important;
+  border-radius: 8px;
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.navbar-brand:hover, .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  color: #ffe066 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2, h3, h4, h5 {
+  color: #0d6efd;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
-.App-link {
-  color: #61dafb;
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 8px rgba(13,110,253,0.07);
+}
+.table thead {
+  background: #0d6efd;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e3f0ff;
+}
+
+.btn, .btn-primary {
+  background: linear-gradient(90deg, #0d6efd 60%, #6c63ff 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.btn:hover, .btn-primary:hover {
+  background: linear-gradient(90deg, #6c63ff 60%, #0d6efd 100%);
+  color: #ffe066;
+}
+
+a, .App-link {
+  color: #0d6efd;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover, .App-link:hover {
+  color: #6c63ff;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  border: none;
+}
+
+/* Modal custom styles */
+.modal-content {
+  border-radius: 12px;
+}
+.modal-header {
+  background: #0d6efd;
+  color: #fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.modal-footer {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 @keyframes App-logo-spin {
